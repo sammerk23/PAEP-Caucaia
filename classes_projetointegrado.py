@@ -69,4 +69,30 @@ class Responsavel(Usuario):
     def endereco(self, novoEndereco):
         self.__endereco = novoEndereco
 
-  # Continuação código
+
+# Jonathan Oliveira
+from typing import Optional
+
+class Turma:
+    def __init__(self, id_turma: int, nome_turma: str, ano_letivo: int):
+        self.__id_turma = id_turma
+        self.__nome_turma = nome_turma
+        self.__ano_letivo = ano_letivo
+        self.__professor_responsavel: Optional[Professor] = None
+
+    @property
+    def nome_turma(self):
+        return self.__nome_turma
+
+    @nome_turma.setter
+    def nome_turma(self, novo_nome):
+        self.__nome_turma = novo_nome
+    
+    @property
+    def professor(self):
+        return self.__professor_responsavel
+
+    def definir_professor(self, professor: Professor):
+        self.__professor_responsavel = professor
+    
+    # Métodos para matricular aluno, adicionar disciplina e tarefa depois que os outros implementarem suas classes...
