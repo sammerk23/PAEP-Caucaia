@@ -7,7 +7,7 @@ O nosso projeto, com o tema _Painel de Acompanhamento Escolar para Pais/Respons�
 ## Proposta de Solução
 A ideia inicial do projeto é desenvolver uma plataforma digital de acompanhamento escolar que promova maior integração entre pais, alunos e escola. O produto será um sistema web, no qual serão oferecidas funcionalidades como consulta de notas, frequência, calendário de eventos, comunicados da escola e relatórios de desempenho. Além disso, permitirá o envio de notificações para manter os responsáveis sempre informados. Dessa forma, a solução ajudará o público-alvo ao facilitar o acesso às informações escolares, engajar os pais de maneira ativa e contínua na vida acadêmica dos alunos e fortalecer a parceria com a instituição, contribuindo para reduzir a evasão escolar e melhorar o aprendizado.
 
-## Funcionalidades
+## Principais Funcionalidades
 - Consulta de Notas
 - Frequência do aluno
 - Calendário de Eventos escolares
@@ -16,3 +16,4 @@ A ideia inicial do projeto é desenvolver uma plataforma digital de acompanhamen
 - Consultar Tarefas e Trabalhos
 
 ## Possíveis usos da nossa solução
+O sistema de Acompanhamento escolar para pais e responsáveis pode auxiliar escolas e outras entidades educacionais a manter um diálogo aberto com a comunidade de pais/responsáveis e facilitar a troca e acompanhamento de informações relevantes de maneira assíncrona.
