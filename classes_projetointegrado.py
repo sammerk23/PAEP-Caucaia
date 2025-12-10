@@ -11,25 +11,25 @@ from abc import ABC, abstractmethod
 
 
 # Kelvin Sammer
-class Usuario(ABC):
+class Usuario(ABC): #Superclasse abstrata
     def __init__(self, nome: str, email: str):
         self.__nome = nome
         self.__email = email
 
     @property
-    def nome(self):
+    def nome(self): #Get Nome
         return self.__nome
 
     @property
-    def email(self):
+    def email(self): #Get Email
         return self.__email
 
-class Admin(Usuario):
+class Admin(Usuario): #Classe filho Admin
     def __init__(self, nome: str, email: str, senha: str):
         super().__init__(nome, email)
         self.__senha = senha
 
-class Professor(Usuario):
+class Professor(Usuario): #Classe filho Professor
     def __init__(self, nome: str, email: str, senha: str, materia: str, turma: str):
         super().__init__(nome, email)
         self.__senha = senha
@@ -37,14 +37,14 @@ class Professor(Usuario):
         self.__turma = turma
 
     @property
-    def materia(self):
+    def materia(self): #Get Materia
         return self.__materia
 
     @property
-    def turma(self):
+    def turma(self): #Get Turma
         return self.__turma
 
-class Responsavel(Usuario):
+class Responsavel(Usuario): #Classe filho Responsável
     def __init__(self, nome: str, email: str, senha: str, matriculaAluno: int, dataNascimento: str, endereco: str):
         super().__init__(nome, email)
         self.__senha = senha
@@ -53,20 +53,20 @@ class Responsavel(Usuario):
         self.__endereco = endereco
 
     @property
-    def matriculaAluno(self):
+    def matriculaAluno(self): #Get Matrícula
         return self.__matriculaAluno
 
 
     @property
-    def dataNascimento(self):
+    def dataNascimento(self): #Get Data de nascimento
         return self.__dataNascimento
 
     @property
-    def endereco(self):
+    def endereco(self): #Get Endereço
         return self.__endereco
 
     @endereco.setter
-    def endereco(self, novoEndereco):
+    def endereco(self, novoEndereco): #Set novo Endereço
         self.__endereco = novoEndereco
 
 
