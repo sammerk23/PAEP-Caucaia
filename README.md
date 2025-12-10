@@ -20,13 +20,13 @@ O sistema de Acompanhamento escolar para pais e responsáveis pode auxiliar esco
 
 ### Justificativas (por quê implementar)
 
-- _Transparência e confiança_: 
+- __Transparência e confiança__: 
 Um painel de acompanhamento escolar pode facilitar a troca de informações e promover maior transparência sobre o desempenho do aluno, diminuindo a distância entre a família e a escola.
 
 ### Contextos de Uso
 
-- _Monitoramento do desempenho_: 
+- __Monitoramento do desempenho__: 
 Através do painel, pais e responsáveis ficam melhor informados e capacitados para identificar baixo desempenho do aluno em certas matérias, podendo assim intervir para facilitar uma recuperação do aluno antes do fim do ano letivo.
 
-- _Facilitação da comunicação_: 
+- __Facilitação da comunicação__: 
 Através do painel de acompanhamento escolar, os pais podem centralizar e contribuir para uma comunicação direta com a escola.
