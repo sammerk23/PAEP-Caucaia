@@ -17,3 +17,16 @@ A ideia inicial do projeto é desenvolver uma plataforma digital de acompanhamen
 
 ## Possíveis usos da nossa solução
 O sistema de Acompanhamento escolar para pais e responsáveis pode auxiliar escolas e outras entidades educacionais a manter um diálogo aberto com a comunidade de pais/responsáveis e facilitar a troca e acompanhamento de informações relevantes de maneira assíncrona.
+
+### Justificativas (por quê implementar)
+
+- Transparência e confiança
+Um painel de acompanhamento escolar pode facilitar a troca de informações e promover maior transparência sobre o desempenho do aluno, diminuindo a distância entre a família e a escola
+
+### Contextos de Uso
+
+- Monitoramento do desempenho 
+Através do painel, pais e responsáveis ficam melhor informados e capacitados para identificar baixo desempenho do aluno em certas matérias, podendo assim intervir para facilitar uma recuperação do aluno antes do fim do ano letivo
+
+- Facilitação da comunicação
+Através do painel de acompanhamento escolar, os pais podem centralizar e contribuir para uma comunicação direta com a escola
