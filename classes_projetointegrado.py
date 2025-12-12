@@ -94,5 +94,34 @@ class Turma:
 
     def definir_professor(self, professor: Professor):
         self.__professor_responsavel = professor
+
+    # Keven
+
+    # CLASSE Disciplina
+    class Disciplina:
+        def __init__(self, codigo, nome, carga_horaria, professor):
+            self.codigo = codigo
+            self.nome = nome
+            self.carga_horaria = carga_horaria
+            self.professor = professor
+        
+        # Dicionário que armazena notas dos alunos
+        # chave = aluno_id | valor = lista de notas
+            self.alunos_notas = {}
+       
+        def adicionar_nota(self, aluno_id, nota):
+        # Se o aluno ainda não existir no dicionário, cria a lista 
+            if aluno_id not in self.alunos_notas:
+                self.alunos_notas[aluno_id] = []
+                self.alunos_notas[aluno_id].append(nota)
+        # Retorna mensagem de confirmação   
+                return f"✅ Nota {nota} adicionada em {self.nome}"
+        
+        def media_aluno(self, aluno_id):
+            notas = self.alunos_notas.get(aluno_id, [])
+            if len(notas) == 0:
+                return 0
+            return sum(notas) / len(notas)
+
     
     # Métodos para matricular aluno, adicionar disciplina e tarefa depois que os outros implementarem suas classes...
