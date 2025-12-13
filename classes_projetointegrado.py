@@ -123,5 +123,26 @@ class Turma:
                 return 0
             return sum(notas) / len(notas)
 
+#Wellington 
+class Aluno(Usuario):
+    def __init__(self, nome: str, email: str, matricula: int, dataNascimento: str, turma: Turma):
+        super().__init__(nome, email)
+        self.__matricula = matricula
+        self.__dataNascimento = dataNascimento
+        self.__turma = turma
+        self.__disciplinas = []
+
+    def matricula(self):
+        return self.__matricula
     
-    # Métodos para matricular aluno, adicionar disciplina e tarefa depois que os outros implementarem suas classes...
+    def dataNascimento(self):
+        return self.__dataNascimento
+
+    def turma(self):
+        return self.__turma
+
+    def disciplinas(self):
+        return self.__disciplinas
+
+    def matricular_disciplina(self, disciplina):
+        self.__disciplinas.append(disciplina)
