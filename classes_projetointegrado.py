@@ -146,3 +146,46 @@ class Aluno(Usuario):
 
     def matricular_disciplina(self, disciplina):
         self.__disciplinas.append(disciplina)
+
+# Rafael Paixão
+
+# CLASSE Evento
+from datetime import date  # importa o tipo date para o atributo de data
+
+
+class Evento:  # organiza e gerencia os eventos escolares
+    def __init__(self, título: str, data_evento: data, descricao: str, local: str, pais_responsaveis: str):
+        self.__titulo = titulo
+        self.__data_evento = data_evento
+        self.__descrição = descricao
+        self.__local = local
+        self.__descricao = descricao
+        self.__pais_responsaveis = pais_responsaveis
+
+    @property  # retorna o título do evento
+    def titulo_evento(self):
+        return self.__titulo_evento
+
+    @property  # retorna o dia do evento
+    def data_evento(self):
+        return self.__data_evento
+
+    @property
+    def descricao(self):  # retorna detalhadamente o evento
+        return self.__descricao
+
+    @property  # retorna o local onde o evento ocorrerá
+    def local(self):
+        return self.__local
+
+    @property  # retorna a quem se destina o evento
+    def publico_alvo(self):
+        return self.__publico_alvo
+
+    @descricao.setter  # possibilita editar a descrição do evento
+    def descricao(self, nova_descricao: str):
+        self.__descricao = nova_descricao
+
+    @publico_alvo.setter  # possibilita editar o público alvo do evento
+    def publico_alvo(self, novo_publico_alvo: str):
+        self.__novo_publico_alvo = novo_publico_alvo
