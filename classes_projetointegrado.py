@@ -12,7 +12,6 @@ from typing import List, Optional
 from datetime import date
 
 # Keven
-# CLASSE Disciplina
 class Disciplina:
     def __init__(self, codigo: str, nome: str, carga_horaria: int):
         self.__codigo = codigo
@@ -110,7 +109,6 @@ class Turma:
     def adicionar_aluno(self, aluno):
         self.__alunos_matriculados.append(aluno)
 
-
 # Wellington 
 class Aluno(Usuario):
     def __init__(self, nome: str, email: str, matricula: int, data_nascimento: str, turma: Turma):
@@ -143,7 +141,6 @@ class Aluno(Usuario):
         self.__disciplinas.append(disciplina)
         print(f"O aluno {self.nome} foi matriculado na disciplina de {disciplina.nome}")
 
-
 # Kelvin Sammer
 class Responsavel(Usuario): # Classe filho Responsável
     def __init__(self, nome: str, email: str, senha: str, aluno_dependente: Aluno, endereco: str):
@@ -168,11 +165,7 @@ class Responsavel(Usuario): # Classe filho Responsável
         media = disciplina.media_aluno(self.__aluno_dependente.matricula)
         print(f"Responsável {self.nome} verificando nota de {self.__aluno_dependente.nome} em {disciplina.nome}: Média {media:.1f}")
 
-
 # Rafael Paixão
-# CLASSE Evento
-from datetime import date  # importa o tipo date para o atributo de data
-
 class Evento:  # organiza e gerencia os eventos escolares
     def __init__(self, titulo: str, data_evento: date, descricao: str, local: str):
         self.__titulo = titulo
