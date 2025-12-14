@@ -7,171 +7,190 @@ Original file is located at
     https://colab.research.google.com/drive/1e8r6Kn3wwW_RwzMToxnp19j_ezyS4T6g
 """
 
-from abc import ABC, abstractmethod
+from abc import ABC
+from typing import List, Optional
+from datetime import date
 
+# Keven
+# CLASSE Disciplina
+class Disciplina:
+    def __init__(self, codigo: str, nome: str, carga_horaria: int):
+        self.__codigo = codigo
+        self.__nome = nome
+        self.__carga_horaria = carga_horaria
+    
+    # Dicionário que armazena notas dos alunos
+    # chave = aluno_id | valor = lista de notas
+        self.__alunos_notas = {}
+
+    @property
+    def nome(self):
+        return self.__nome
+    
+    @property
+    def codigo(self):
+        return self.__codigo
+    
+    def adicionar_nota(self, aluno, nota: float):
+    # Se o aluno ainda não existir no dicionário, cria a lista 
+        if aluno.matricula not in self.__alunos_notas:
+            self.__alunos_notas[aluno.matricula] = []
+        self.__alunos_notas[aluno.matricula].append(nota)
+        print(f"Nota {nota} adicionada para {aluno.nome} (Matrícula: {aluno.matricula}) em {self.__nome}")
+    
+    def media_aluno(self, aluno_matricula: int):
+        notas = self.__alunos_notas.get(aluno_matricula, [])
+        if len(notas) == 0:
+            return 0
+        return sum(notas) / len(notas)
 
 # Kelvin Sammer
-class Usuario(ABC): #Superclasse abstrata
+class Usuario(ABC): # Superclasse abstrata
     def __init__(self, nome: str, email: str):
         self.__nome = nome
         self.__email = email
 
     @property
-    def nome(self): #Get Nome
+    def nome(self): # Get Nome
         return self.__nome
 
     @property
-    def email(self): #Get Email
+    def email(self): # Get Email
         return self.__email
 
-class Admin(Usuario): #Classe filho Admin
+class Admin(Usuario): # Classe filho Admin
     def __init__(self, nome: str, email: str, senha: str):
         super().__init__(nome, email)
         self.__senha = senha
 
-class Professor(Usuario): #Classe filho Professor
-    def __init__(self, nome: str, email: str, senha: str, materia: str, turma: str):
+class Professor(Usuario): # Classe filho Professor
+    def __init__(self, nome: str, email: str, senha: str, disciplina: str):
         super().__init__(nome, email)
         self.__senha = senha
-        self.__materia = materia
-        self.__turma = turma
+        self.__disciplina = disciplina
 
-    @property
-    def materia(self): #Get Materia
-        return self.__materia
-
-    @property
-    def turma(self): #Get Turma
-        return self.__turma
-
-class Responsavel(Usuario): #Classe filho Responsável
-    def __init__(self, nome: str, email: str, senha: str, matriculaAluno: int, dataNascimento: str, endereco: str):
-        super().__init__(nome, email)
-        self.__senha = senha
-        self.__matriculaAluno = matriculaAluno
-        self.__dataNascimento = dataNascimento
-        self.__endereco = endereco
-
-    @property
-    def matriculaAluno(self): #Get Matrícula
-        return self.__matriculaAluno
-
-
-    @property
-    def dataNascimento(self): #Get Data de nascimento
-        return self.__dataNascimento
-
-    @property
-    def endereco(self): #Get Endereço
-        return self.__endereco
-
-    @endereco.setter
-    def endereco(self, novoEndereco): #Set novo Endereço
-        self.__endereco = novoEndereco
-
+    @property 
+    def disciplina(self): # Get Disciplina
+        return self.__disciplina
 
 # Jonathan Oliveira
-from typing import Optional
-
 class Turma:
-    def __init__(self, id_turma: int, nome_turma: str, ano_letivo: int):
+    def __init__(self, id_turma: int, serie: str, sigla: str, ano_letivo: int):
         self.__id_turma = id_turma
-        self.__nome_turma = nome_turma
+        self.__serie = serie       # Ex: "9º Ano"
+        self.__sigla = sigla       # Ex: "A", "B", "C"
         self.__ano_letivo = ano_letivo
+
+        # O uso do Optional aqui serve apenas para dizer que pode começar vazio (None), o código vai rodar mesmo se tirarmos isso
         self.__professor_responsavel: Optional[Professor] = None
 
+        # Lista para armazenar os alunos matriculados na turma
+        self.__alunos_matriculados: List[Aluno] = []
+
+    # Get turma
     @property
     def nome_turma(self):
-        return self.__nome_turma
-
-    @nome_turma.setter
-    def nome_turma(self, novo_nome):
-        self.__nome_turma = novo_nome
+        return f"{self.__serie} - Turma {self.__sigla} ({self.__ano_letivo})"
     
+    # Get professor
     @property
     def professor(self):
         return self.__professor_responsavel
 
+    # Get alunos
+    @property
+    def alunos(self):
+        return self.__alunos_matriculados
+
+    # Para definir o professor responsável pela turma
     def definir_professor(self, professor: Professor):
         self.__professor_responsavel = professor
 
-    # Keven
+    # Para adicionar um aluno à turma
+    def adicionar_aluno(self, aluno):
+        self.__alunos_matriculados.append(aluno)
 
-    # CLASSE Disciplina
-    class Disciplina:
-        def __init__(self, codigo, nome, carga_horaria, professor):
-            self.codigo = codigo
-            self.nome = nome
-            self.carga_horaria = carga_horaria
-            self.professor = professor
-        
-        # Dicionário que armazena notas dos alunos
-        # chave = aluno_id | valor = lista de notas
-            self.alunos_notas = {}
-       
-        def adicionar_nota(self, aluno_id, nota):
-        # Se o aluno ainda não existir no dicionário, cria a lista 
-            if aluno_id not in self.alunos_notas:
-                self.alunos_notas[aluno_id] = []
-                self.alunos_notas[aluno_id].append(nota)
-        # Retorna mensagem de confirmação   
-                return f"✅ Nota {nota} adicionada em {self.nome}"
-        
-        def media_aluno(self, aluno_id):
-            notas = self.alunos_notas.get(aluno_id, [])
-            if len(notas) == 0:
-                return 0
-            return sum(notas) / len(notas)
 
-#Wellington 
+# Wellington 
 class Aluno(Usuario):
-    def __init__(self, nome: str, email: str, matricula: int, dataNascimento: str, turma: Turma):
+    def __init__(self, nome: str, email: str, matricula: int, data_nascimento: str, turma: Turma):
         super().__init__(nome, email)
         self.__matricula = matricula
-        self.__dataNascimento = dataNascimento
+        self.__data_nascimento = data_nascimento
         self.__turma = turma
         self.__disciplinas = []
 
+        # Adiciona o aluno à turma ao ser criado
+        self.__turma.adicionar_aluno(self)
+
+    @property
     def matricula(self):
         return self.__matricula
     
+    @property
     def dataNascimento(self):
         return self.__dataNascimento
 
+    @property
     def turma(self):
         return self.__turma
 
+    @property
     def disciplinas(self):
         return self.__disciplinas
 
-    def matricular_disciplina(self, disciplina):
+    def matricular_disciplina(self, disciplina: Disciplina):
         self.__disciplinas.append(disciplina)
+        print(f"O aluno {self.nome} foi matriculado na disciplina de {disciplina.nome}")
+
+
+# Kelvin Sammer
+class Responsavel(Usuario): # Classe filho Responsável
+    def __init__(self, nome: str, email: str, senha: str, aluno_dependente: Aluno, endereco: str):
+        super().__init__(nome, email)
+        self.__senha = senha
+        self.__aluno_dependente = aluno_dependente
+        self.__endereco = endereco
+
+    @property
+    def aluno(self):    # Get aluno dependente
+        return self.__aluno_dependente
+
+    @property
+    def endereco(self): # Get Endereço
+        return self.__endereco
+
+    @endereco.setter
+    def endereco(self, novoEndereco): # Set novo Endereço
+        self.__endereco = novoEndereco
+
+    def ver_boletim_filho(self, disciplina: Disciplina):
+        media = disciplina.media_aluno(self.__aluno_dependente.matricula)
+        print(f"Responsável {self.nome} verificando nota de {self.__aluno_dependente.nome} em {disciplina.nome}: Média {media:.1f}")
+
 
 # Rafael Paixão
-
 # CLASSE Evento
 from datetime import date  # importa o tipo date para o atributo de data
 
-
 class Evento:  # organiza e gerencia os eventos escolares
-    def __init__(self, título: str, data_evento: data, descricao: str, local: str, pais_responsaveis: str):
+    def __init__(self, titulo: str, data_evento: date, descricao: str, local: str):
         self.__titulo = titulo
         self.__data_evento = data_evento
-        self.__descrição = descricao
+        self.__descricao = descricao 
         self.__local = local
-        self.__descricao = descricao
-        self.__pais_responsaveis = pais_responsaveis
+        self.__publico_alvo = "Todos"
 
     @property  # retorna o título do evento
     def titulo_evento(self):
-        return self.__titulo_evento
+        return self.__titulo
 
     @property  # retorna o dia do evento
     def data_evento(self):
         return self.__data_evento
 
-    @property
-    def descricao(self):  # retorna detalhadamente o evento
+    @property # retorna detalhadamente o evento
+    def descricao(self): 
         return self.__descricao
 
     @property  # retorna o local onde o evento ocorrerá
@@ -189,3 +208,91 @@ class Evento:  # organiza e gerencia os eventos escolares
     @publico_alvo.setter  # possibilita editar o público alvo do evento
     def publico_alvo(self, novo_publico_alvo: str):
         self.__novo_publico_alvo = novo_publico_alvo
+
+
+if __name__ == "__main__":
+    print(">>> INICIANDO SISTEMA DE GESTÃO ESCOLAR (PAEP Caucaia) <<<\n")
+
+    # --- Criando Disciplinas ---
+    matematica = Disciplina("MAT01", "Matemática", 64)
+    historia = Disciplina("HIS01", "História", 64)
+    geografia = Disciplina("GEO01", "Geografia", 64)
+    print(f"Disciplinas criadas: {matematica.nome}, {historia.nome} e {geografia.nome}")
+
+    # --- Cadastrando Professores ---
+    # Instanciando Professor (Herança de Usuario)
+    prof_jonathan = Professor("Jonathan Oliveira Silva", "zorarugners@escola.dominio.br", "Br13Free", matematica.nome)
+    prof_sammer = Professor("Kelvin Sammer", "KevinSMM@escola.dominio.br", "AH891ns0", historia.nome)
+    print(f"\nProfessor contratado: {prof_jonathan.nome} - Disciplina: {prof_jonathan.disciplina}")
+    print(f"Professor contratado: {prof_sammer.nome} - Disciplina: {prof_sammer.disciplina}\n")
+
+    # --- Abrindo Turmas ---
+    # Criando a turma do 9º Ano A e B
+    turma_9a = Turma(1, "9º Ano", "A", 2024)
+    turma_9b = Turma(2, "9º Ano", "B", 2024)
+    
+    # Associando os professores às turmas (Setter)
+    turma_9a.definir_professor(prof_jonathan)
+    turma_9b.definir_professor(prof_sammer)
+
+    print(f"Turma criada: {turma_9a.nome_turma}")
+    print(f"Professor Regente: {turma_9a.professor.nome}\n")
+
+    print(f"Turma criada: {turma_9b.nome_turma}")
+    print(f"Professor Regente: {turma_9b.professor.nome}")
+
+    # --- Matriculando Alunos ---
+    # O Aluno depende da Turma para ser criado (Associação forte)
+    aluno_lucas = Aluno("Lucas Oliveira", "lucas@aluno.com", 2024001, "10/05/2010", turma_9a)
+    aluno_ana   = Aluno("Ana Beatriz", "ana@aluno.com", 2024002, "15/08/2010", turma_9a)
+
+    aluno_wellington = Aluno("Wwellington Silva", "well@aluno.com", 2024003, "19/03/2010", turma_9b)
+    aluno_rafael   = Aluno("Rafael Gomes", "rafael_gomes@aluno.com", 2024004, "25/04/2010", turma_9b)
+
+    print(f"Alunos matriculados na {turma_9a.nome_turma}:")
+    for aluno in turma_9a.alunos:
+        print(f"- {aluno.nome} (Matrícula: {aluno.matricula})")
+
+    print(f"\nAlunos matriculados na {turma_9b.nome_turma}:")
+    for aluno in turma_9b.alunos:
+        print(f"- {aluno.nome} (Matrícula: {aluno.matricula})")
+
+    print("\n Vinculando as disciplinas...")
+    # Matriculando aluno nas disciplinas (Associação Aluno <-> Disciplina)
+    aluno_lucas.matricular_disciplina(matematica)
+    aluno_lucas.matricular_disciplina(historia)
+    aluno_rafael.matricular_disciplina(geografia)
+    aluno_rafael.matricular_disciplina(historia)
+
+    # --- Cadastrando Responsável ---
+    # O Responsável é ligado a um objeto Aluno específico
+    mae_lucas = Responsavel("Maria Oliveira", "maria@email.com", "senha123", aluno_lucas, "Rua das Flores, 100")
+    pai_rafael = Responsavel("Alexandro Jorge", "alexjorge@email.com", "123senha", aluno_rafael, "Rua General Ferreira, 302")
+    mae_ana = Responsavel("Tamires Rocha", "tamirocha@email.com", "s1e2n3h4a", aluno_ana, "Rua Quintino Cunha, 3225")
+
+    print("\nResponsavéis cadastrados:")
+    print(f"Responsável: {mae_lucas.nome} | Dependente: {mae_lucas.aluno.nome}")
+    print(f"Responsável: {pai_rafael.nome} | Dependente: {pai_rafael.aluno.nome}")
+    print(f"Responsável: {mae_ana.nome} | Dependente: {mae_ana.aluno.nome}")
+
+    # --- Rotina: Lançamento de Notas ---
+    # Professor lança notas na disciplina
+    print("\nLançamento de notas...")
+    matematica.adicionar_nota(aluno_lucas, 8.5)
+    matematica.adicionar_nota(aluno_lucas, 9.5)
+    
+    # Simulando nota para outro aluno para testar
+    matematica.adicionar_nota(aluno_ana, 7.0)
+    matematica.adicionar_nota(aluno_ana, 8.0)
+
+    #--- Rotina: Verificação de Boletim ---
+    # O responsável consulta a média usando o método da sua classe
+    print(f"\nVerificação do boletim...")
+    mae_lucas.ver_boletim_filho(matematica)
+    mae_ana.ver_boletim_filho(matematica)
+
+    # --- Agenda de Eventos ---
+    print("\nEventos agendados:")
+    dia_evento = date(2024, 11, 20)
+    feira = Evento("Feira de Ciências", dia_evento, "Apresentação de projetos", "Ginásio")
+    print(f"{feira.titulo_evento} em {feira.data_evento} no {feira.local}")
