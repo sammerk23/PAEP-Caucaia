@@ -127,7 +127,7 @@ class Aluno(Usuario):
     
     @property
     def dataNascimento(self):
-        return self.__dataNascimento
+        return self.__data_nascimento
 
     @property
     def turma(self):
@@ -200,7 +200,7 @@ class Evento:  # organiza e gerencia os eventos escolares
 
     @publico_alvo.setter  # possibilita editar o público alvo do evento
     def publico_alvo(self, novo_publico_alvo: str):
-        self.__novo_publico_alvo = novo_publico_alvo
+        self.__publico_alvo = novo_publico_alvo
 
 
 if __name__ == "__main__":
