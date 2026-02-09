@@ -167,11 +167,11 @@ class Responsavel(Usuario): # Classe filho Responsável
 
 # Rafael Paixão
 class Evento:  # organiza e gerencia os eventos escolares
-    def __init__(self, titulo: str, data_evento: date, descricao: str, local: str):
+    def __init__(self, titulo: str, data_evento: date, descricao: str, localizacao: str):
         self.__titulo = titulo
         self.__data_evento = data_evento
         self.__descricao = descricao 
-        self.__local = local
+        self.__localizacao = localizacao
         self.__publico_alvo = "Todos"
 
     @property  # retorna o título do evento
@@ -186,9 +186,9 @@ class Evento:  # organiza e gerencia os eventos escolares
     def descricao(self): 
         return self.__descricao
 
-    @property  # retorna o local onde o evento ocorrerá
-    def local(self):
-        return self.__local
+    @property  # retorna a localizacao onde o evento ocorrerá
+    def localizacao(self):
+        return self.__localizacao
 
     @property  # retorna a quem se destina o evento
     def publico_alvo(self):
@@ -288,4 +288,4 @@ if __name__ == "__main__":
     print("\nEventos agendados:")
     dia_evento = date(2024, 11, 20)
     feira = Evento("Feira de Ciências", dia_evento, "Apresentação de projetos", "Ginásio")
-    print(f"{feira.titulo_evento} em {feira.data_evento} no {feira.local}")
+    print(f"{feira.titulo_evento} em {feira.data_evento} no {feira.localizacao}")
