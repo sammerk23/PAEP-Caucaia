@@ -34,4 +34,6 @@ Através do painel de acompanhamento escolar, os pais podem centralizar e contri
 ## Importância do projeto físico de banco de dados
 O projeto físico de banco de dados se refere à etapa de implantação do modelo lógico em um SGDB (Sistema de Gerenciamento de Banco de Dados) específico. É a etapa em que construímos a estrutura que ficará responsável pelo armazenamento e gerenciamento dos dados do projeto.
 
+A construção e implementação de um projeto físico de banco de dados é uma etapa fundamental da maioria dos projetos de sistemas. Sendo indispensável para o bom desempenho e a capacidade de entrega de uma solução funcional para o problema que o sistema visa solucionar.
+
 Dessa forma, se torna extremamente importante que alguém que está aprendendo a programar entenda como funciona e como implementar um projeto físico de banco de dados. Pois além de ajudar a entender como o sistema funciona melhor, ele ajuda a construir sistemas mais enxutos e escaláveis. Além de permitir que o projeto armazene e recupere dados de forma mais organizada, escalável e permanente. 
