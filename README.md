@@ -38,3 +38,15 @@ O projeto físico de banco de dados se refere à etapa de implantação do model
 A construção e implementação de um projeto físico de banco de dados é uma etapa fundamental da maioria dos projetos de sistemas. Sendo indispensável para o bom desempenho e a capacidade de entrega de uma solução funcional para o problema que o sistema visa solucionar.
 
 Dessa forma, se torna extremamente importante que alguém que está aprendendo a programar entenda como funciona e como implementar um projeto físico de banco de dados. Pois além de ajudar a entender como o sistema funciona melhor, ele ajuda a construir sistemas mais enxutos e escaláveis. Além de permitir que o projeto armazene e recupere dados de forma mais organizada, escalável e permanente. 
+
+## Wireframes e Interface Humano Computador
+Os wireframes são ferramentas de prototipação rápida de interfaces. Essas ferramentas podem ser de alta ou baixa fidelidade. Servindo como esboços ou rascunhos das telas e interfaces finais.
+
+A ideia do wireframe é reduzir o tempo de ideação e criação de interfaces. Isso é realizado ao permitir que ideias de interfaces possam ser testadas rapidamente antes de serem criadas as versões finais. Assim podendo testar diferentes designs em um curto tempo, poupando assim esforço e diminuindo os custos de retrabalho.
+
+### IHC e Design Centrado no Usuário
+A criação de wireframes, assim como interfaces finais, deve seguir regras e melhores práticas. Com o objetivo de assim proporcionar uma experiência mais satisfatória para o usuário final.
+
+O estudo dessas regras e boas práticas é representado pela disciplina de Interface Humano Computador (IHC). Sendo assim, a IHC tem como foco não apenas a excelência técnica, mas também a experiência do usuário.
+
+Isso se dá porque a criação de designs focados no usuário permite um melhor uso do sistema, consequentemente facilitando e incentivando o uso. O que leva a tanto uma melhor qualidade final e desempenho do sistema, quanto a uma maior satisfação e geração de valor para o usuário. Consequentemente aumentando assim o sucesso geral e financeiro do produto.
