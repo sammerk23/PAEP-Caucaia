@@ -47,6 +47,8 @@ A ideia do wireframe é reduzir o tempo de ideação e criação de interfaces. 
 ### IHC e Design Centrado no Usuário
 A criação de wireframes, assim como interfaces finais, deve seguir regras e melhores práticas. Com o objetivo de assim proporcionar uma experiência mais satisfatória para o usuário final.
 
-O estudo dessas regras e boas práticas é representado pela disciplina de Interface Humano Computador (IHC). Sendo assim, a IHC tem como foco não apenas a excelência técnica, mas também a experiência do usuário.
+O estudo dessas regras e boas práticas é representado pela disciplina de Interface Humano-Computador (IHC). Sendo assim, a IHC tem como foco não apenas a excelência técnica, mas também a experiência do usuário.
 
-Isso se dá porque a criação de designs focados no usuário permite um melhor uso do sistema, consequentemente facilitando e incentivando o uso. O que leva a tanto uma melhor qualidade final e desempenho do sistema, quanto a uma maior satisfação e geração de valor para o usuário. Consequentemente aumentando assim o sucesso geral e financeiro do produto.
+Isso se dá porque a criação de designs focados no usuário permite um melhor uso do sistema, consequentemente facilitando e incentivando o uso. O que leva a tanto uma melhor qualidade final e desempenho do sistema, quanto a uma maior satisfação e geração de valor para o usuário. Consequentemente, aumentando assim o sucesso geral e financeiro do produto.
+
+##Importância da Experiência do Usuário (UX)
