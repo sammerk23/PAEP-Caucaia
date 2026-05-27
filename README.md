@@ -10,7 +10,7 @@ A ideia inicial do projeto é desenvolver uma plataforma digital de acompanhamen
 ## Principais Funcionalidades
 - Consulta de Notas
 - Frequência do aluno
-- Calendário de Eventos escolares
+- Calendário de eventos escolares
 - Visualização de comunicados da escola
 - Relatórios de desempenho do aluno
 - Consultar Tarefas e Trabalhos
@@ -18,7 +18,7 @@ A ideia inicial do projeto é desenvolver uma plataforma digital de acompanhamen
 ## Possíveis usos da nossa solução
 O sistema de Acompanhamento escolar para pais e responsáveis pode auxiliar escolas e outras entidades educacionais a manter um diálogo aberto com a comunidade de pais/responsáveis e facilitar a troca e acompanhamento de informações relevantes de maneira assíncrona.
 
-### Justificativas (por quê implementar)
+### Justificativas (porquê implementar)
 
 - __Transparência e confiança__: 
 Um painel de acompanhamento escolar pode facilitar a troca de informações e promover maior transparência sobre o desempenho do aluno, diminuindo a distância entre a família e a escola.
@@ -42,13 +42,18 @@ Dessa forma, se torna extremamente importante que alguém que está aprendendo a
 ## Wireframes e Interface Humano Computador
 Os wireframes são ferramentas de prototipação rápida de interfaces. Essas ferramentas podem ser de alta ou baixa fidelidade. Servindo como esboços ou rascunhos das telas e interfaces finais.
 
-A ideia do wireframe é reduzir o tempo de ideação e criação de interfaces. Isso é realizado ao permitir que ideias de interfaces possam ser testadas rapidamente antes de serem criadas as versões finais. Assim podendo testar diferentes designs em um curto tempo, poupando assim esforço e diminuindo os custos de retrabalho.
+A ideia do wireframe é reduzir o tempo de ideação e criação de interfaces. Isso é realizado ao permitir que ideias de interfaces possam ser testadas rapidamente antes de serem criadas as versões finais. Assim, podendo testar diferentes designs em um curto tempo, poupando assim esforço e diminuindo os custos de retrabalho.
 
 ### IHC e Design Centrado no Usuário
 A criação de wireframes, assim como interfaces finais, deve seguir regras e melhores práticas. Com o objetivo de assim proporcionar uma experiência mais satisfatória para o usuário final.
 
 O estudo dessas regras e boas práticas é representado pela disciplina de Interface Humano-Computador (IHC). Sendo assim, a IHC tem como foco não apenas a excelência técnica, mas também a experiência do usuário.
 
-Isso se dá porque a criação de designs focados no usuário permite um melhor uso do sistema, consequentemente facilitando e incentivando o uso. O que leva a tanto uma melhor qualidade final e desempenho do sistema, quanto a uma maior satisfação e geração de valor para o usuário. Consequentemente, aumentando assim o sucesso geral e financeiro do produto.
+Isso se dá porque a criação de designs focados no usuário permite um melhor uso do sistema, consequentemente facilitando e incentivando o uso. O que leva tanto a uma melhor qualidade final e desempenho do sistema quanto a uma maior satisfação e geração de valor para o usuário. Consequentemente, aumentando assim o sucesso geral e financeiro do produto.
 
 ##Importância da Experiência do Usuário (UX)
+A importância da Experiência do Usuário se dá tanto pelos benefícios que ela traz ao usuário quanto pelo papel dela de auxiliar o usuário a atingir seus objetivos no sistema. Assim, aumentando a satisfação do usuário e, consequentemente, o uso do produto.
+
+A UX tem assim o poder de reduzir a frustração e aumentar a retenção do usuário. Pois seu papel como facilitadora e simplificadora do uso permite uma jornada mais confortável e eficiente ao usuário. Isso se dá pela função da UX de entender e se adequar ao usuário, além de prover soluções mais adequadas às suas particularidades.
+
+Dessa forma, a importância da UX impacta diretamente tanto o usuário quanto os resultados do negócio, se mostrando assim essencial tanto por um quanto pelo outro motivo.
