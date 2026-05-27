@@ -51,7 +51,7 @@ O estudo dessas regras e boas práticas é representado pela disciplina de Inter
 
 Isso se dá porque a criação de designs focados no usuário permite um melhor uso do sistema, consequentemente facilitando e incentivando o uso. O que leva tanto a uma melhor qualidade final e desempenho do sistema quanto a uma maior satisfação e geração de valor para o usuário. Consequentemente, aumentando assim o sucesso geral e financeiro do produto.
 
-##Importância da Experiência do Usuário (UX)
+## Importância da Experiência do Usuário (UX)
 A importância da Experiência do Usuário se dá tanto pelos benefícios que ela traz ao usuário quanto pelo papel dela de auxiliar o usuário a atingir seus objetivos no sistema. Assim, aumentando a satisfação do usuário e, consequentemente, o uso do produto.
 
 A UX tem assim o poder de reduzir a frustração e aumentar a retenção do usuário. Pois seu papel como facilitadora e simplificadora do uso permite uma jornada mais confortável e eficiente ao usuário. Isso se dá pela função da UX de entender e se adequar ao usuário, além de prover soluções mais adequadas às suas particularidades.
