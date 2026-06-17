@@ -57,3 +57,7 @@ A importância da Experiência do Usuário se dá tanto pelos benefícios que el
 A UX tem assim o poder de reduzir a frustração e aumentar a retenção do usuário. Pois seu papel como facilitadora e simplificadora do uso permite uma jornada mais confortável e eficiente ao usuário. Isso se dá pela função da UX de entender e se adequar ao usuário, além de prover soluções mais adequadas às suas particularidades.
 
 Dessa forma, a importância da UX impacta diretamente tanto o usuário quanto os resultados do negócio, se mostrando assim essencial tanto por um quanto pelo outro motivo.
+
+## O que é Arquitetura de Software?
+A arquitetura de software é a disciplina responsável por estruturar e planejar o desenvolvimento de software, focando em desempenho, escalabilidade, resiliência e outras boas práticas.
+Dessa forma, o papel dela serve como um pilar que dá estabilidade e serve para sustentar todo o sistema.
