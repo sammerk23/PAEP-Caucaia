@@ -62,6 +62,6 @@ Dessa forma, a importância da UX impacta diretamente tanto o usuário quanto os
 A arquitetura de software é a disciplina responsável por estruturar e planejar o desenvolvimento de software, focando em desempenho, escalabilidade, resiliência e uso de boas práticas.
 Assim, o papel dela é ser o pilar que dá estabilidade e sustenta todo o sistema do ponto de vista do planejamento estrutural.
 
-Além disso, ao utilizar práticas de arquitetura de software, nós conseguimos diretamente melhorar a qualidade final do software, seja em aspectos técnicos, como requisitos funcionais e não funcionais, seja no alinhamento com a real necessidade do cliente, agregando assim mais valor ao software e, portanto, trazendo resultados financeiros. 
+Isso ocorre pois o foco da arquitetura de software está em planejar e criar a estrutura de um sistema que seja seguro, escalável, resiliente, eficiente, eficaz e legível. Ao mesmo tempo em que o seu foco em boas práticas permite a construção de um sistema facilmente manutenível e escalável.
 
-Isso ocorre pelo foco da arquitetura de software em conseguir planejar e criar a estrutura de um sistema que é seguro, escalável, resiliente, eficiente, eficaz e legível. Ao mesmo tempo que seu foco em boas práticas permite a construção de um sistema facilmente manutenível e escalável.   
+Dessa forma, ao utilizar práticas de arquitetura de software, conseguimos melhorar diretamente a qualidade final do software, seja em aspectos técnicos, como requisitos funcionais e não funcionais, seja no alinhamento com a real necessidade do cliente. Assim, aumentando a qualidade e agregando mais valor ao software, e consequentemente, trazendo melhores resultados financeiros. 
