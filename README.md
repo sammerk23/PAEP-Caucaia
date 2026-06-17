@@ -45,19 +45,23 @@ Os wireframes são ferramentas de prototipação rápida de interfaces. Essas fe
 A ideia do wireframe é reduzir o tempo de ideação e criação de interfaces. Isso é realizado ao permitir que ideias de interfaces possam ser testadas rapidamente antes de serem criadas as versões finais. Assim, podendo testar diferentes designs em um curto tempo, poupando assim esforço e diminuindo os custos de retrabalho.
 
 ### IHC e Design Centrado no Usuário
-A criação de wireframes, assim como interfaces finais, deve seguir regras e melhores práticas. Com o objetivo de assim proporcionar uma experiência mais satisfatória para o usuário final.
+A criação de wireframes, assim como de interfaces finais, deve seguir regras e melhores práticas. Com o objetivo de assim proporcionar uma experiência mais satisfatória para o usuário final.
 
 O estudo dessas regras e boas práticas é representado pela disciplina de Interface Humano-Computador (IHC). Sendo assim, a IHC tem como foco não apenas a excelência técnica, mas também a experiência do usuário.
 
 Isso se dá porque a criação de designs focados no usuário permite um melhor uso do sistema, consequentemente facilitando e incentivando o uso. O que leva tanto a uma melhor qualidade final e desempenho do sistema quanto a uma maior satisfação e geração de valor para o usuário. Consequentemente, aumentando assim o sucesso geral e financeiro do produto.
 
 ## Importância da Experiência do Usuário (UX)
-A importância da Experiência do Usuário se dá tanto pelos benefícios que ela traz ao usuário quanto pelo papel dela de auxiliar o usuário a atingir seus objetivos no sistema. Assim, aumentando a satisfação do usuário e, consequentemente, o uso do produto.
+A importância da experiência do usuário se dá tanto pelos benefícios que ela traz ao usuário quanto pelo papel dela de auxiliar o usuário a atingir seus objetivos no sistema. Assim, aumentando a satisfação do usuário e, consequentemente, o uso do produto.
 
 A UX tem assim o poder de reduzir a frustração e aumentar a retenção do usuário. Pois seu papel como facilitadora e simplificadora do uso permite uma jornada mais confortável e eficiente ao usuário. Isso se dá pela função da UX de entender e se adequar ao usuário, além de prover soluções mais adequadas às suas particularidades.
 
 Dessa forma, a importância da UX impacta diretamente tanto o usuário quanto os resultados do negócio, se mostrando assim essencial tanto por um quanto pelo outro motivo.
 
 ## O que é Arquitetura de Software?
-A arquitetura de software é a disciplina responsável por estruturar e planejar o desenvolvimento de software, focando em desempenho, escalabilidade, resiliência e outras boas práticas.
-Dessa forma, o papel dela serve como um pilar que dá estabilidade e serve para sustentar todo o sistema.
+A arquitetura de software é a disciplina responsável por estruturar e planejar o desenvolvimento de software, focando em desempenho, escalabilidade, resiliência e uso de boas práticas.
+Assim, o papel dela é ser o pilar que dá estabilidade e sustenta todo o sistema do ponto de vista do planejamento estrutural.
+
+Além disso, ao utilizar práticas de arquitetura de software, nós conseguimos diretamente melhorar a qualidade final do software, seja em aspectos técnicos, como requisitos funcionais e não funcionais, seja no alinhamento com a real necessidade do cliente, agregando assim mais valor ao software e, portanto, trazendo resultados financeiros. 
+
+Isso ocorre pelo foco da arquitetura de software em conseguir planejar e criar a estrutura de um sistema que é seguro, escalável, resiliente, eficiente, eficaz e legível. Ao mesmo tempo que seu foco em boas práticas permite a construção de um sistema facilmente manutenível e escalável.   
