@@ -1,0 +1,277 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* CABEÇALHO E MENU */
+.cabecalho-index {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 15px 50px;             
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-menu-container a {
+    display: flex;
+}
+
+.logo {
+    height: 40px; 
+    width: auto;
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.cabecalho-index a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-navegacao a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+.btn-login {
+    border: 2px solid #333;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.btn-login:hover {
+    background-color: #333;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/* SEÇÕES PRINCIPAIS*/
+.main-index {
+    margin-top: 50px; 
+}
+
+.section-index {
+    min-height: 80vh; 
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px dashed #ccc;
+}
+
+.section-index:nth-child(even) {
+    background-color: #fbfbfb;
+}
+
+.titulo-centralizado {
+    text-align: central;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* LAYOUT (FLEXBOX) */
+.layout-lado-a-lado {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto-index {
+    flex: 1; 
+}
+
+.texto-index h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+/* PLACEHOLDERS (ESPAÇOS PARA IMAGENS) */
+.imagem-section {
+    width: 50%;
+}
+
+.imagem-section img {
+    width: 100%;
+}
+
+.imagem-placeholder {
+    flex: 1; 
+    background-color: #eaeaea;
+    border: 3px dashed #bbb;
+    border-radius: 8px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.icone-placeholder {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border: 2px dashed #aaa;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* GRADE DE FUNCIONALIDADES */
+.grade-funcionalidades {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card-funcionalidade {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card-funcionalidade strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* TELA DE LOGIN */
+.container-login {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-imagem {
+    flex: 0 0 60%; 
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ddd;
+}
+
+.imagem-placeholder-login {
+    color: #777;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.login-formulario-area {
+    flex: 0 0 40%; 
+    display: flex;
+    padding-top: 4%;
+    /*align-items: center;*/  
+    justify-content: center;
+}
+
+.login-box {
+    width: 80%;
+    max-width: 350px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-login {
+    height: 30vh;
+}
+
+.form-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-login input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-acessar {
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-acessar:hover {
+    background-color: #555;
+}
+
+.link-esqueceu-senha {
+    font-size: 0.9rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.link-esqueceu-senha:hover {
+    text-decoration: underline;
+}
