@@ -1,1 +1,50 @@
-<h1>Aqui será o Painel principal</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - PAEP</title>
+    <link rel="stylesheet" href="../../static/css/styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho-index">
+        <div class="logo-menu-container">
+            <a href="dashboard.html">
+                <img src="../../static/imagens/Logo_Menu.png" alt="Logotipo do sistema PAEP" class="logo">
+            </a>
+        </div>
+    
+        <nav class="menu-navegacao">
+            <ul>
+                <li><a href="dashboard.html">Painel</a></li>
+                <li><a href="boletim.html">Boletim</a></li>
+                <li><a href="avisos.html">Avisos</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+
+        <a href="perfil.html" class="btn-login">Meu Perfil</a>
+        
+    </header>
+    <main class="padding-tela">
+        <!-- Apresentação da Tela -->
+        <section class="apresentacao-tela">
+            <div class="texto-apresentacao">
+                <h1>Calendário Acadêmico</h1>
+                <p>Acompanhe datas de provas, reuniões e eventos escolares.</p>
+            </div>
+            <div class="seletor-dependente">
+                <label for="aluno">Acompanhando:</label>
+                <select id="aluno" name="aluno">
+                    <option value="jose">José Ferreira</option>
+                    <option value="marina">Marina</option>
+                </select>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
