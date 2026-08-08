@@ -1,0 +1,53 @@
+.apresentacao-tela {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.texto-apresentacao h1 {
+    font-size: 1.8rem;
+}
+
+.texto-apresentacao p {
+    font-size: 0.95rem;
+}
+
+.seletor-dependente {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.seletor-dependente select {
+    padding-right: 10px;
+    font-size: 0.9rem;
+    border: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .apresentacao-tela {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px; 
+    }
+
+    .texto-apresentacao h1 {
+        font-size: 1.5rem;
+    }
+
+    .seletor-dependente {
+        width: 100%;
+        display: flex;
+    }
+
+    .seletor-dependente select {
+        width: 100%;
+        text-align: center;
+    }
+}
