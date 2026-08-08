@@ -1,0 +1,232 @@
+/* Responsividade Mobile */
+.grid-painel {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: 1 coluna */
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+/* Tablet e Telas Médias: 2 colunas */
+@media (min-width: 768px) {
+    .grid-painel {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop: 3 colunas, correspondendo ao mockup */
+@media (min-width: 1024px) {
+    .grid-painel {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+    
+    /* O calendário é mais alto, permitimos que ele ocupe até 2 linhas no grid */
+    .calendario {
+        grid-row: span 2;
+    }
+}
+
+/* ======================================================
+   ESTILO GERAL DOS CARDS
+====================================================== */
+.dashboard-card {
+    background-color: #ffffff;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%; /* Preenche a célula do grid */
+}
+
+.card-header {
+    background-color: #124d5e; /* Azul esverdeado escuro */
+    color: #ffffff;
+    padding: 0.8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #1a1a1a;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-header a, 
+.card-header span {
+    color: #ffffff;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.card-header a:hover {
+    text-decoration: underline;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ======================================================
+   RESUMO DE NOTAS (Tabela)
+====================================================== */
+.tabela-notas {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.tabela-notas td {
+    padding: 0.6rem 0.4rem;
+}
+
+/* Separador visual sutil entre as duas colunas de matérias */
+.tabela-notas td:nth-child(2) {
+    padding-right: 1.5rem;
+    border-right: 1px solid #e0e0e0;
+}
+
+.tabela-notas td:nth-child(3) {
+    padding-left: 1.5rem;
+}
+
+.tabela-notas .disciplina {
+    color: #333333;
+}
+
+.tabela-notas .nota {
+    font-weight: 700;
+    text-align: right;
+    color: #1a1a1a;
+}
+
+.tabela-notas .nota-vermelha {
+    font-weight: 700;
+    text-align: right;
+    color: #d32f2f; /* Vermelho alerta */
+}
+
+/* Nota verde específica da imagem */
+.tabela-notas td.nota:contains("10") {
+    color: #0f9d58; 
+}
+
+/* ======================================================
+   EVENTOS E ALERTAS (Caixas Internas)
+====================================================== */
+.item-interno-card {
+    border: 2px solid #1a1a1a;
+    border-radius: 6px;
+    padding: 0.8rem;
+}
+
+.item-interno-card p {
+    margin: 0 0 0.5rem 0;
+}
+
+.evento-detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.evento-detalhes p {
+    margin: 0;
+}
+
+.evento-detalhes a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.item-interno-alerta {
+    border: 2px solid #f28b82;
+    border-radius: 6px;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.item-interno-alerta p {
+    margin: 0 0 0.2rem 0;
+}
+
+.alerta-texto {
+    color: #d32f2f;
+    font-size: 0.9rem;
+}
+
+/* ======================================================
+   CALENDÁRIO E LEGENDA
+====================================================== */
+.tabela-calendario {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.tabela-calendario th {
+    padding: 0.5rem;
+    font-weight: normal;
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+.tabela-calendario td {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+.tabela-calendario .texto-vermelho { color: #d32f2f; }
+.tabela-calendario .mes-diferente { color: #cccccc; }
+
+/* Estilização dos dias destacados */
+.bg-feriado, .bg-prova, .bg-reuniao {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px; /* Centraliza o texto verticalmente */
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.bg-prova { background-color: #d32f2f; }
+.bg-feriado { background-color: #f29900; }
+.bg-reuniao { background-color: #124d5e; }
+
+/* Legenda do calendário */
+.lista-legenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-legenda li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.quadradinho {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+}

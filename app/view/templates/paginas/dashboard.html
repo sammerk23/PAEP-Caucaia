@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../static/css/base.css">
     <link rel="stylesheet" href="../../static/css/components/menu.css">
     <link rel="stylesheet" href="../../static/css/components/apresentacao_secao.css">
+    <link rel="stylesheet" href="../../static/css/paginas/dashboard.css">
 </head>
 <body>
 
@@ -35,8 +36,8 @@
         <!-- Apresentação da Tela -->
         <section class="apresentacao-tela">
             <div class="texto-apresentacao">
-                <h1>Calendário Acadêmico</h1>
-                <p>Acompanhe datas de provas, reuniões e eventos escolares.</p>
+                <h1>Bem vindo ao Painel!</h1>
+                <p>Acompanhe de forma simples o progresso escolar diário de seus filhos.</p>
             </div>
             <div class="seletor-dependente">
                 <label for="aluno">Acompanhando:</label>
@@ -46,6 +47,203 @@
                 </select>
             </div>
         </section>
+        <div class="grid-painel">
+            <section class="dashboard-card">
+                <header class="card-header">
+                    <h3>Resumo de notas - 1º Bimestre</h3>
+                    <a href="#">Ver completo</a>
+                </header>
+                <div class="card-body">
+                    <table class="tabela-notas">
+                        <tbody>
+                            <tr>
+                                <td class="disciplina">História:</td>
+                                <td class="nota">8,5</td>
+                                
+                                <td class="disciplina">Física 1:</td>
+                                <td class="nota-vermelha">4,5</td>
+                            </tr>
+                            <tr>
+                                <td class="disciplina">Geografia:</td>
+                                <td class="nota">9,5</td>
+                                
+                                <td class="disciplina">Física 2:</td>
+                                <td class="nota">6,0</td>
+                            </tr>
+                            <tr>
+                                <td class="disciplina">Língua Portuguesa:</td>
+                                <td class="nota">8,0</td>
+                                
+                                <td class="disciplina">Química 1:</td>
+                                <td class="nota">7,0</td>
+                            </tr>
+                            <tr>
+                                <td class="disciplina"> Inglês:</td>
+                                <td class="nota">8,5</td>
+                                
+                                <td class="disciplina">Química 2:</td>
+                                <td class="nota">6,5</td>
+                            </tr>
+                            <tr>
+                                <td class="disciplina">Literatura:</td>
+                                <td class="nota">10</td>
+                                
+                                <td class="disciplina">Biologia:</td>
+                                <td class="nota">8,5</td>
+                            </tr>
+                            <tr>
+                                <td class="disciplina">Filosofia:</td>
+                                <td class="nota">8,5</td>
+                                
+                                <td class="disciplina">Matemática 1:</td>
+                                <td class="nota">6,5</td>
+                            </tr>
+                                <tr>
+                                <td class="disciplina">Sociologia:</td>
+                                <td class="nota">9,0</td>
+                                
+                                <td class="disciplina">Matemática 2:</td>
+                                <td class="nota-vermelha">5,5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="dashboard-card">
+                <header class="card-header">
+                    <h3>Próximos eventos</h3>
+                    <a href="#">Ver todos os eventos</a>
+                </header>
+                <div class="card-body">
+                    <div class="item-interno">
+                        <p><strong>Prova bimestral de Matemática 1</strong></p>
+                        <div class="evento-detalhes">
+                            <p><b>Local:</b> Sala 5A</p> <p><b>Data:</b> 05/05/2026</p> <a href="#">Ver Evento</a>
+                        </div>
+                    </div>
+                    <div class="item-interno">
+                        <p><strong>Feira de Ciências</strong></p>
+                        <div class="evento-detalhes">
+                            <p><b>Local:</b> Ginásio da Escola</p> <p><b>Data:</b> 25/05/2026</p> <a href="#">Ver Evento</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-card calendario">
+                <header class="card-header">
+                    <h3>Calendário</h3>
+                    <span>Maio 2026</span>
+                </header>
+                <div class="card-body">
+                    <table class="tabela-calendario">
+                        <thead>
+                            <tr>
+                                <th>seg.</th>
+                                <th>ter.</th>
+                                <th>qua.</th>
+                                <th>qui.</th>
+                                <th>sex.</th>
+                                <th class="texto-vermelho">sáb.</th>
+                                <th class="texto-vermelho">dom.</th>
+                            </tr>
+                        </thead>
+                        
+                        <!-- Dias do mês -->
+                        <tbody>
+                            <!-- Primeira Semana -->
+                            <tr>
+                                <td class="mes-diferente">27</td>
+                                <td class="mes-diferente">28</td>
+                                <td class="mes-diferente">29</td>
+                                <td class="mes-diferente">30</td>
+                                <td><span class="bg-feriado">01</span></td>
+                                <td class="texto-vermelho">02</td>
+                                <td class="texto-vermelho">03</td>
+                            </tr>
+                            <!-- Segunda Semana -->
+                            <tr>
+                                <td>04</td>
+                                <td><span class="bg-prova">05</span></td>
+                                <td>06</td>
+                                <td>07</td>
+                                <td>08</td>
+                                <td class="texto-vermelho">09</td>
+                                <td class="texto-vermelho">10</td>
+                            </tr>
+                            <!-- Terceira Semana -->
+                            <tr>
+                                <td>11</td>
+                                <td><span class="bg-reuniao">12</span></td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td class="texto-vermelho">16</td>
+                                <td class="texto-vermelho">17</td>
+                            </tr>
+                            <!-- Quarta Semana -->
+                             <tr>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td class="texto-vermelho">23</td>
+                                <td class="texto-vermelho">24</td>
+                            </tr>
+                            <!-- Quinta Semana -->
+                             <tr>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td class="texto-vermelho">30</td>
+                                <td class="texto-vermelho">31</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="calendario-legenda">
+                        <ul class="lista-legenda">
+                            <li><span class="quadradinho bg-prova"></span> Provas</li>
+                            <li><span class="quadradinho bg-feriado"></span> Feriados</li>
+                            <li><span class="quadradinho bg-reuniao"></span> Reuniões</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-card">
+                <header class="card-header">
+                    <h3>Quadro de avisos</h3>
+                    <a href="#">Ver todos os avisos</a>
+                </header>
+                <div class="card-body">
+                    <p><b>Nenhum aviso no momento!</b></p>
+                </div>
+            </section>
+
+            <section class="dashboard-card">
+                <header class="card-header">
+                    <h3>Indicador de risco!</h3>
+                </header>
+                <div class="card-body">
+                    <p>O aluno <strong>José Ferreira</strong> precisa de apoio urgente nas disciplinas:</p>
+                    <div class="item-interno-alerta">
+                        <p><strong>Física 1</strong></p>
+                        <p class="alerta-texto">A última nota foi 4,5</p>
+                    </div>
+
+                    <div class="item-interno-alerta">
+                        <p><strong>Matemática 2</strong></p>
+                        <p class="alerta-texto">A última nota foi 5,5</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </main>
 
 </body>
