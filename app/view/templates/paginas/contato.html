@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../static/css/base.css">
     <link rel="stylesheet" href="../../static/css/components/menu.css">
     <link rel="stylesheet" href="../../static/css/components/apresentacao_secao.css">
+    <link rel="stylesheet" href="../../static/css/paginas/contate-nos.css">
 </head>
 <body>
 
@@ -31,9 +32,22 @@
         <a href="perfil.html" class="btn-login">Meu Perfil</a>
         
     </header>
-    <main>
-        <h1>Bem-vindo ao Contato</h1>
-        <p>Aqui será o conteúdo principal do contato.</p>
+    <main class="conteudo">
+        <section class="contato" aria-labelledby="titulo-contato">
+            <h1 id="titulo-contato">Contate-nos</h1>
+
+            <form class="formulario" action="#" method="POST">
+                <div class="campos">
+                    <input type="text" name="nome" placeholder="Nome" aria-label="Nome" required>
+                    <input type="email" name="email" placeholder="E-mail" aria-label="E-mail" required>
+                    <input type="text" name="assunto" placeholder="Assunto" aria-label="Assunto" required>
+                </div>
+
+                <textarea name="mensagem" placeholder="Mensagem" aria-label="Mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
 </body>
