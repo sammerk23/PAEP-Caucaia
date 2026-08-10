@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagens ficam limitadas ao tamanho do contêiner */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    width: 100%;
+    min-height: 82px;
+    padding: 12px 24px;
+    background: #dff1f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo {
+    color: #005d6b;
+    flex: 0 0 auto;
+}
+
+.logo strong {
+    display: block;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.logo small {
+    display: block;
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+.menu {
+    flex: 1 1 auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 4px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    color: #005d6b;
+}
+
+.usuario {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* Conteúdo */
+.conteudo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 8px auto 0;
+    padding: 0 16px;
+    flex: 1;
+}
+
+.contato {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 28px 20px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin-bottom: 38px;
+    text-align: center;
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.formulario {
+    width: 100%;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    background: #fff;
+    font: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+input {
+    height: 44px;
+    padding: 0 12px;
+}
+
+textarea {
+    min-height: 115px;
+    padding: 12px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007080;
+    box-shadow: 0 0 0 2px rgba(0, 112, 128, 0.12);
+}
+
+button {
+    display: block;
+    width: min(245px, 100%);
+    min-height: 42px;
+    margin: 32px auto 0;
+    border: 0;
+    border-radius: 10px;
+    background: #006b78;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005763;
+}
+
+/* Rodapé */
+.rodape {
+    width: 100%;
+    margin-top: 18px;
+    padding: 34px 16px;
+    background: #ddd;
+    text-align: center;
+    line-height: 1.45;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo,
+    .usuario {
+        flex: 1 1 auto;
+    }
+
+    .usuario {
+        text-align: right;
+    }
+
+    .menu {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .menu ul {
+        gap: 4px 18px;
+    }
+
+    .campos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .campos input:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .cabecalho {
+        padding: 14px 16px;
+        gap: 14px;
+        align-items: flex-start;
+    }
+
+    .logo strong {
+        font-size: 26px;
+    }
+
+    .usuario {
+        font-size: 13px;
+        text-align: right;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu a {
+        width: 100%;
+        padding: 9px 12px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .conteudo {
+        padding: 0 10px;
+        margin-top: 6px;
+    }
+
+    .contato {
+        padding: 24px 14px;
+    }
+
+    h1 {
+        margin-bottom: 26px;
+        font-size: 32px;
+    }
+
+    .campos {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 14px;
+    }
+
+    .campos input:last-child {
+        grid-column: auto;
+    }
+
+    textarea {
+        min-height: 150px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 22px;
+    }
+
+    .rodape {
+        padding: 26px 12px;
+        font-size: 14px;
+    }
+}

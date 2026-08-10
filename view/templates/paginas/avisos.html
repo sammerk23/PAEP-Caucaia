@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avisos - PAEP</title>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/components/menu.css">
+    <link rel="stylesheet" href="../../static/css/components/apresentacao_secao.css">
+    <link rel="stylesheet" href="../../static/css/paginas/avisos.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho-index">
+        <div class="logo-menu-container">
+            <a href="dashboard.html">
+                <img src="../../static/imagens/Logo_Menu.png" alt="Logotipo do sistema PAEP" class="logo">
+            </a>
+        </div>
+    
+        <nav class="menu-navegacao">
+            <ul>
+                <li><a href="dashboard.html">Painel</a></li>
+                <li><a href="boletim.html">Boletim</a></li>
+                <li><a href="avisos.html">Avisos</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+
+        <a href="perfil.html" class="btn-login">Meu Perfil</a>
+        
+    </header>
+    <main>
+        <h1>Bem-vindo aos Avisos</h1>
+        <p>Aqui será o conteúdo principal dos avisos.</p>
+    </main>
+    <div class="busca-container">
+      <input type="search" placeholder="Buscar aviso pelo título..." class="campo-busca">
+    </div>
+
+    <nav class="filtros-nav">
+      <div class="filtros-categorias">
+        <span class="filtro-item ativo">Todos</span>
+        <span class="filtro-item">Reuniões</span>
+        <span class="filtro-item">Feriados</span>
+        <span class="filtro-item">Notas</span>
+      </div>
+      <span class="filtro-periodo">Período: Últimos 30 dias</span>
+    </nav>
+
+    <!-- Grid de Avisos Expansíveis -->
+    <div class="avisos-grid">
+
+      <article class="aviso-card">
+        <details>
+          <summary>
+            <h2>Reunião de Pais: Feedback via formulário</h2>
+            <time datetime="2026-05-09">09/05/2026</time>
+          </summary>
+          <div class="aviso-conteudo">
+            <p>Prezados pais e responsáveis do aluno José Ferreira, solicitamos o preenchimento do formulário enviado ontem.</p>
+          </div>
+        </details>
+      </article>
+
+      <article class="aviso-card">
+        <details>
+          <summary>
+            <h2>Gincana no dia 06 de Maio</h2>
+            <time datetime="2026-04-29">29/04/2026</time>
+          </summary>
+          <div class="aviso-conteudo">
+            <p>Prezados pais e responsáveis do aluno José Ferreira, informamos que amanhã terá início nossa gincana escolar 2026.</p>
+          </div>
+        </details>
+      </article>
+
+      <article class="aviso-card">
+        <details>
+          <summary>
+            <h2>Feriado Escolar: Dia do trabalhador - 1 de maio</h2>
+            <time datetime="2026-04-28">28/04/2026</time>
+          </summary>
+          <div class="aviso-conteudo">
+            <p>Prezados pais e responsáveis do aluno José Ferreira, informamos que dia 1 de maio não haverá atividades na escola, devido ao feriado nacional.</p>
+          </div>
+        </details>
+      </article>
+
+      <article class="aviso-card">
+        <details>
+          <summary>
+            <h2>Notas e frequências liberadas!</h2>
+            <time datetime="2026-04-25">25/04/2026</time>
+          </summary>
+          <div class="aviso-conteudo">
+            <p>Prezados pais e responsáveis do aluno José Ferreira, informamos que as notas e frequências de seu filho já estão disponíveis para consulta no portal.</p>
+          </div>
+        </details>
+      </article>
+
+    </div>
+
+  </section>
+</body>
+</html>
