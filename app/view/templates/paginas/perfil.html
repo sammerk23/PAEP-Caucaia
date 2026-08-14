@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil - PAEP</title>
+    
+   
     <link rel="stylesheet" href="../../static/css/base.css">
     <link rel="stylesheet" href="../../static/css/components/menu.css">
+    <link rel="stylesheet" href="../../static/css/paginas/perfil.css">
+    
+    <!-- Importação de fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- Cabeçalho-->
     <header class="cabecalho-index">
+        <!-- Logo do PAEP com link para o Painel Inicial -->
         <div class="logo-menu-container">
             <a href="dashboard.html">
                 <img src="../../static/imagens/Logo_Menu.png" alt="Logotipo do sistema PAEP" class="logo">
             </a>
         </div>
-    
-        <nav class="menu-navegacao">
+        
+                <nav class="menu-navegacao">
             <ul>
                 <li><a href="dashboard.html">Painel</a></li>
                 <li><a href="boletim.html">Boletim</a></li>
@@ -27,11 +37,133 @@
             </ul>
         </nav>
 
+       
         <a href="perfil.html" class="btn-login">Meu Perfil</a>
-        
     </header>
-    <main>
-        <h1>Aqui será o conteúdo principal do Perfil.</h1>
+
+    <!-- Tela de perfil -->
+    <main class="area-perfil">
+        
+        <div class="profile-container">
+            
+          
+            <div class="page-title-container">
+                <svg class="icon title-icon" viewBox="0 0 24 24"><path d="M12,19.2C15.19,19.2 17.89,17.22 18.61,14.28C17.87,13.2 16.65,12.4 15.13,12.1C14.73,12.03 14.31,12 13.9,12H10.1C9.69,12 9.27,12.03 8.87,12.1C7.35,12.4 6.13,13.2 5.39,14.28C6.11,17.22 8.81,19.2 12,19.2M12,5A3,3 0 0,0 9,8A3,3 0 0,0 12,11A3,3 0 0,0 15,8A3,3 0 0,0 12,5M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></svg>
+                <h1>Meu Perfil</h1>
+            </div>
+    
+            <!-- Início do Formulário -->
+            <form>
+                
+                <!-- SEÇÃO 1: Dados Pessoais -->
+                <div class="section-divider">
+                    <span>Dados Pessoais</span>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" value="Maria Joaquina"> <!-- Campo pré-preenchido com dados Mock -->
+                    </div>
+                    <div class="form-group">
+                        <label>Sobrenome</label>
+                        <input type="text" value="Sousa da Silva Ramos de Holanda">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" value="marijoa@estude.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Tefefone</label>
+                        <input type="text" value="(88) 99200-9292">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>CPF</label>
+                        <input type="text" value="123.987.555-90">
+                    </div>
+                    <div class="form-group">
+                        <label>RG</label>
+                        <input type="text" value="12.345.789-9">
+                    </div>
+                </div>
+    
+                <!-- SEÇÃO 2: Endereço -->
+                <div class="section-divider">
+                    <span>Endereço</span>
+                </div>
+               
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Logradouro</label>
+                        <input type="text" value="Rua Carmo da Rocha Soares Brandão">
+                    </div>
+                    <div class="form-group">
+                        <label>CEP</label>
+                        <input type="text" value="88098-000">
+                    </div>
+                </div>
+               
+                <div class="form-row">
+                    <div class="form-group small">
+                        <label>Numero</label>
+                        <input type="text" value="1098">
+                    </div>
+                    <div class="form-group">
+                        <label>Bairro</label>
+                        <input type="text" value="Alto da Colina">
+                    </div>
+                    <div class="form-group">
+                        <label>Cidade</label>
+                        <input type="text" value="Campina do Norte">
+                    </div>
+                    <div class="form-group small">
+                        <label>UF</label>
+                        <input type="text" value="Ceará">
+                    </div>
+                </div>
+    
+                <!-- SEÇÃO 3: Tabela de Alunos Dependentes -->
+                <div class="section-divider">
+                    <span>Dependentes</span>
+                </div>
+                <table>
+                    
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Matrícula</th>
+                            <th>Serie/Ano</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>José Ferreira da Silva Ramos</td>
+                            <td>202600123</td>
+                            <td>9<sup>º</sup> Ano do Ensino Fundamental</td>
+                        </tr>
+                        <tr>
+                            <td>Marina da Silva Ramos</td>
+                            <td>202600124</td>
+                            <td>7<sup>º</sup> Ano do Ensino Fundamental</td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <!-- Botões -->
+                <div class="button-container">
+                    <button type="button" class="btn-save">Salvar</button>
+                    <button type="button" class="btn-cancel">Cancelar</button>
+                </div>
+
+            </form>
+        </div>
     </main>
 
 </body>
