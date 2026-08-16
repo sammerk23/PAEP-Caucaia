@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../static/css/base.css">
     <link rel="stylesheet" href="../../static/css/components/menu.css">
     <link rel="stylesheet" href="../../static/css/components/apresentacao_secao.css">
+    <link rel="stylesheet" href="../../static/css/paginas/boletim.css">
 </head>
 <body>
 
@@ -32,8 +33,25 @@
         
     </header>
     <main>
-        <h1>Bem-vindo ao Boletim</h1>
-        <p>Aqui será o conteúdo principal do boletim.</p>
+        <div class="boletim-card">
+            <div class="boletim-card__topo">
+                <div class="boletim-card__intro">
+                    <h1 class="boletim-card__titulo">Boletim</h1>
+                    <p class="boletim-card__descricao">Consulte as notas bimestrais, faltas acumuladas e a frequência total.</p>
+                </div>
+
+                <div class="seletor-aluno">
+                    Acompanhando:
+                    <select class="seletor-aluno__campo" id="js-seletor-aluno"></select>
+                </div>
+            </div>
+
+            <div id="js-boletim-conteudo">
+                <div class="mensagem">Carregando…</div>
+            </div>
+        </div>
+
+        <script src="../../static/js/boletim.js"></script>
     </main>
 
 </body>
