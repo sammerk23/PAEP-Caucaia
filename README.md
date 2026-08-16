@@ -65,3 +65,10 @@ Assim, o papel dela é ser o pilar que dá estabilidade e sustenta todo o sistem
 Isso ocorre pois o foco da arquitetura de software está em planejar e criar a estrutura de um sistema que seja seguro, escalável, resiliente, eficiente, eficaz e legível. Ao mesmo tempo em que o seu foco em boas práticas permite a construção de um sistema facilmente manutenível e escalável.
 
 Dessa forma, ao utilizar práticas de arquitetura de software, conseguimos melhorar diretamente a qualidade final do software, seja em aspectos técnicos, como requisitos funcionais e não funcionais, seja no alinhamento com a real necessidade do cliente. Assim, aumentando a qualidade e agregando mais valor ao software, e consequentemente, trazendo melhores resultados financeiros. 
+
+## Como Utilizar a Aplicação
+Para utilizar a aplicação, basta que o código-fonte do projeto seja baixado e executado como se apresenta no repositório. Assim, o usuário pode ter acesso à aplicação para rodá-la localmente e aproveitar suas funcionalidades para seu próprio projeto.
+
+A PAEP foi construída para diminuir a distância entre os pais/responsáveis e a escola e facilitar o acompanhamento dos mesmos à vida escolar de seus filhos. Dessa forma, os principais beneficiários da aplicação são os alunos e suas famílias e a equipe de funcionários da gestão de uma escola.
+
+Um exemplo de uso seria o painel servir como sistema de suporte da escola para aproximar o contato da escola com os pais e responsáveis dos alunos.
