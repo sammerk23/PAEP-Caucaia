@@ -89,7 +89,7 @@
 }
 
 /* Estilo do formularios (Inputs) */
-.profile-container input[type="text"] {
+.profile-container input {
     border: 2px solid #E0E0E0; /* Borda cinza espessa */
     border-radius: 10px; /* Cantos bem arredondados */
     padding: 10px; /* Espaço interno para o texto não colar na borda */

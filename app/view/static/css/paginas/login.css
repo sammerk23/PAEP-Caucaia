@@ -7,24 +7,23 @@
 
 .login-imagem {
     flex: 0 0 60%; 
-    background-color: #eaeaea;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid #ddd;
 }
 
 .imagem-placeholder-login {
-    color: #777;
-    font-style: italic;
-    font-size: 1.2rem;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.imagem-placeholder-login img {
+    position: relative;
+    object-fit: cover;
+    top: -35%;
 }
 
 .login-formulario-area {
     flex: 0 0 40%; 
     display: flex;
     padding-top: 4%;
-    /*align-items: center;*/  
     justify-content: center;
 }
 
@@ -84,6 +83,28 @@
 
 .link-esqueceu-senha:hover {
     text-decoration: underline;
+}
+
+/* Esqueceu a senha? */
+.info-contato-oculta {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #D5E6F0;
+    border: 1px solid #104F62;
+    border-radius: 5px;
+    color: #2A3B45;
+}
+
+.info-contato-oculta p {
+    margin-bottom: 8px;
+}
+
+.info-contato-oculta ul {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 @media (max-width: 768px) {
