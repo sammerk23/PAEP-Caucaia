@@ -73,3 +73,11 @@ Para utilizar a aplicação, basta que o código-fonte do projeto seja baixado e
 A PAEP foi construída para diminuir a distância entre os pais/responsáveis e a escola e facilitar o acompanhamento dos mesmos à vida escolar de seus filhos. Dessa forma, os principais beneficiários da aplicação são os alunos e suas famílias e a equipe de funcionários da gestão de uma escola.
 
 Um exemplo de uso seria o painel servir como sistema de suporte da escola para aproximar o contato da escola com os pais e responsáveis dos alunos.
+
+## Integração Continua
+A Integração Contínua é um processo na construção de sistemas que estrutura o ciclo de desenvolvimento em um fluxo automatizado de integração. É uma prática de equipe integrado, onde os desenvolvedores enviam commits para o repositório central múltiplas vezes. A cada envio de commits, o servidor é acionado para realizar a montagem da build num ambiente seguro e executar testes. Esse processo fornece um feedback instantâneo a equipe, isso garante que os bugs sejam identificados e corrigidos rapidamente.
+
+A integração contínua, para o iniciante que está aprendendo a programar, ajuda na construção de sua confiança, pois cria um ambiente seguro para a experimentação, possibilitando a execução de testes automatizados, e assegura que bugs sejam detectados rapidamente, dando confiança ao desenvolvedor nos seus projetos. Isso também ajuda na otimização do tempo, pois na integração contínua as resposta são ágeis, permitindo que o tempo gasto procurando problemas de integração seja redirecionado para o desenvolvimento produtivo.
+
+A prática também melhora a colaboração e a comunicação em grupo, visto que os integrantes do grupo aprendem a dividir e coordenar melhor as tarefas. Toda essa automação estimula o iniciante a adotar boas práticas desde o início, criando sistemas com maior coesão e mais fáceis de manter. Ter essa introdução a integração contínua desde cedo atenua a distância entre a teoria e as metodologias ágeis, preparando o indivíduo para um excelente padrão de colaboração, qualidade e entregas frequentes que o futuro mercado de trabalho vai exigir.
+
